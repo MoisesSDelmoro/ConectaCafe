@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_auth/Screens/Catalogo/catalogo.dart';
 import 'package:flutter_auth/Screens/Signup/components/background.dart';
-import 'package:flutter_auth/Screens/registerPlaceOrFarm/registerPlaceOrFarm.dart';
+import 'package:flutter_auth/Screens/confirmRegisterCoffeeGrower/confirmRegisterCoffeeGrower.dart';
 import 'package:flutter_auth/components/rounded_button.dart';
 import 'package:flutter_auth/components/rounded_input_field.dart';
 import 'package:flutter_auth/constants.dart';
@@ -47,6 +46,22 @@ class Body extends StatelessWidget {
             ),
 
             // O email já está cadastrado nessa seção,  ele acabou de inserir
+            RoundedButton(
+              text: "CONTINUAR",
+              color: yellowColor,
+              borderColor: Color.fromRGBO(255, 184, 0, 0),
+              textColor: Colors.white,
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return ConfirmRegisterCoffeeGrower();
+                    },
+                  ),
+                );
+              },
+            ),
           ],
         ),
       ),

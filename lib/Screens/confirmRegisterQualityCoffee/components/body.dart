@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_auth/Screens/Catalogo/catalogo.dart';
 import 'package:flutter_auth/Screens/Signup/components/background.dart';
-import 'package:flutter_auth/Screens/registerPlaceOrFarm/registerPlaceOrFarm.dart';
+import 'package:flutter_auth/Screens/registerQualityCoffee/register_quality_coffee.dart';
 import 'package:flutter_auth/components/rounded_button.dart';
 import 'package:flutter_auth/constants.dart';
 import 'package:flutter_svg/svg.dart';
@@ -24,7 +24,7 @@ class Body extends StatelessWidget {
             ),
             SizedBox(height: size.height * 0.03),
             Text(
-              "Cadastrar propriedade agora?",
+              "Cadastrar qualidade produzida?",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 22,
@@ -42,7 +42,7 @@ class Body extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return RegisterPlaceOrFarm();
+                      return RegisterQualityCoffee();
                     },
                   ),
                 );

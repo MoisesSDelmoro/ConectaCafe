@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_auth/Screens/Catalogo/catalogo.dart';
 import 'package:flutter_auth/Screens/Signup/components/background.dart';
-import 'package:flutter_auth/Screens/registerPlaceOrFarm/registerPlaceOrFarm.dart';
 import 'package:flutter_auth/components/rounded_button.dart';
+import 'package:flutter_auth/components/rounded_input_field.dart';
 import 'package:flutter_auth/constants.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -24,34 +24,46 @@ class Body extends StatelessWidget {
             ),
             SizedBox(height: size.height * 0.03),
             Text(
-              "Cadastrar propriedade agora?",
+              "Cadastro da Qualidade",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 22,
+                fontSize: 28,
                 color: whiteColor,
               ),
             ),
             SizedBox(height: size.height * 0.03),
-            RoundedButton(
-              text: "SIM",
-              color: yellowColor,
-              borderColor: Color.fromRGBO(255, 184, 0, 0),
-              textColor: Colors.white,
-              press: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) {
-                      return RegisterPlaceOrFarm();
-                    },
-                  ),
-                );
-              },
+            RoundedInputField(
+              hintText1: "Tipo",
+              onChanged: (value) {},
+            ),
+            RoundedInputField(
+              hintText1: "Variedade",
+              onChanged: (value) {},
+            ),
+            RoundedInputField(
+              hintText1: "Aroma",
+              onChanged: (value) {},
+            ),
+            RoundedInputField(
+              hintText1: "Sabor",
+              onChanged: (value) {},
+            ),
+            RoundedInputField(
+              hintText1: "Acidez",
+              onChanged: (value) {},
+            ),
+            RoundedInputField(
+              hintText1: "Inseticidas",
+              onChanged: (value) {},
+            ),
+            RoundedInputField(
+              hintText1: "Fertilizantes",
+              onChanged: (value) {},
             ),
             RoundedButton(
-              text: "NÃO",
-              color: lightWhiteColor,
-              borderColor: yellowColor,
+              text: "CONTINUAR",
+              color: yellowColor,
+              borderColor: Color.fromRGBO(255, 184, 0, 0),
               textColor: Colors.white,
               press: () {
                 Navigator.push(
