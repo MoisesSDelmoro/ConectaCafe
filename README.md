@@ -13,8 +13,14 @@ O projeto **Flutter Café** é um projeto em desenvolvimento para a disciplina d
 - <img height="30" src="https://cdn.iconscout.com/icon/free/png-256/gradle-2-1174969.png"/> [Gradle](https://gradle.org/)
 
 ## Front Mobile
-<p align="left"><img height="500" src="https://user-images.githubusercontent.com/57488202/114951627-2cf57c00-9e2b-11eb-95a6-68a0a8689161.png" alt="moisessdelmoro" />
-<img height="500" src="https://user-images.githubusercontent.com/57488202/114951651-3b439800-9e2b-11eb-965f-cebdb414b9a0.png" alt="moisessdelmoro" />
+<p align="left"><img height="350" src="https://user-images.githubusercontent.com/57488202/120115235-1bf19780-c159-11eb-973d-d214586ab2a5.png" alt="moisessdelmoro" />
+<img height="350" src="https://user-images.githubusercontent.com/57488202/120115253-3a579300-c159-11eb-91b3-d9afd896af5d.png" alt="moisessdelmoro" />
+<img height="350" src="https://user-images.githubusercontent.com/57488202/120115325-9a4e3980-c159-11eb-84ca-c2f76bbb3b1d.png" alt="moisessdelmoro" />
+<img height="350" src="https://user-images.githubusercontent.com/57488202/120115283-5c511580-c159-11eb-98c8-67e4957d505d.png" alt="moisessdelmoro" />
+<img height="350" src="https://user-images.githubusercontent.com/57488202/120115357-b0f49080-c159-11eb-845e-91eb9e612511.png" alt="moisessdelmoro" /> 
+<img height="350" src="https://user-images.githubusercontent.com/57488202/120115380-cb2e6e80-c159-11eb-9e0a-c720ceb726d2.png" alt="moisessdelmoro" /> 
+<img height="350" src="https://user-images.githubusercontent.com/57488202/120115407-dda8a800-c159-11eb-868c-0a985c9f5ac4.png" alt="moisessdelmoro" />
+<img height="350" src="https://user-images.githubusercontent.com/57488202/120115419-f0bb7800-c159-11eb-97ed-c61cb05b546d.png" alt="moisessdelmoro" />
 
 ## Colaboradores
 
