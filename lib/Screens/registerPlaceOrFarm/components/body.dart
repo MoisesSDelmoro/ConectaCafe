@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_auth/Screens/Catalogo/catalogo.dart';
 import 'package:flutter_auth/Screens/Signup/components/background.dart';
-import 'package:flutter_auth/Screens/registerPlaceOrFarm/registerPlaceOrFarm.dart';
 import 'package:flutter_auth/components/already_have_an_account_acheck.dart';
 import 'package:flutter_auth/components/rounded_button.dart';
 import 'package:flutter_auth/components/rounded_input_field.dart';
@@ -26,58 +25,44 @@ class Body extends StatelessWidget {
             ),
             SizedBox(height: size.height * 0.03),
             Text(
-              "Cadastro do Produtor",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 28,
-                color: whiteColor,
-              ),
-            ),
-            SizedBox(height: size.height * 0.03),
-            RoundedInputField(
-              hintText1: "Seu nome",
-              onChanged: (value) {},
-            ),
-            RoundedInputField(
-              hintText1: "Seu CPF",
-              onChanged: (value) {},
-            ),
-            RoundedInputField(
-              hintText1: "Seu telefone",
-              onChanged: (value) {},
-            ),
-
-            // O email já está cadastrado nessa seção,  ele acabou de inserir
-
-            SizedBox(height: size.height * 0.03),
-            Text(
-              "Deseja cadastrar alguma propriedade agora?",
+              "Cadastro do Sítio/Fazenda",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 24,
                 color: whiteColor,
               ),
             ),
-
-            RoundedButton(
-              text: "SIM",
-              color: yellowColor,
-              borderColor: Color.fromRGBO(255, 184, 0, 0),
-              textColor: Colors.white,
-              press: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) {
-                      return RegisterPlaceOrFarm();
-                    },
-                  ),
-                );
-              },
+            SizedBox(height: size.height * 0.03),
+            RoundedInputField(
+              hintText1: "Nome da Propriedade",
+              onChanged: (value) {},
             ),
-
+            RoundedInputField(
+              hintText1: "Rua",
+              onChanged: (value) {},
+            ),
+            RoundedInputField(
+              hintText1: "Bairro",
+              onChanged: (value) {},
+            ),
+            RoundedInputField(
+              hintText1: "Cidade",
+              onChanged: (value) {},
+            ),
+            RoundedInputField(
+              hintText1: "Altitude",
+              onChanged: (value) {},
+            ),
+            RoundedInputField(
+              hintText1: "Telefone",
+              onChanged: (value) {},
+            ),
+            RoundedInputField(
+              hintText1: "Sobre/História",
+              onChanged: (value) {},
+            ),
             RoundedButton(
-              text: "NÃO",
+              text: "CONTINUAR",
               color: yellowColor,
               borderColor: Color.fromRGBO(255, 184, 0, 0),
               textColor: Colors.white,
