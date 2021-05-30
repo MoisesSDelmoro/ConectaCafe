@@ -28,10 +28,10 @@ class Body extends StatelessWidget {
             ),
             SizedBox(height: size.height * 0.03),
             Text(
-              "Cadastrar",
+              "Cadastro do Produtor",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 36,
+                fontSize: 28,
                 color: whiteColor,
               ),
             ),

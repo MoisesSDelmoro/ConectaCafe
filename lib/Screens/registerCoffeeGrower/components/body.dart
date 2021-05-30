@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_auth/Screens/Catalogo/catalogo.dart';
 import 'package:flutter_auth/Screens/Signup/components/background.dart';
 import 'package:flutter_auth/components/already_have_an_account_acheck.dart';
 import 'package:flutter_auth/components/rounded_button.dart';
 import 'package:flutter_auth/components/rounded_input_field.dart';
-import 'package:flutter_auth/components/rounded_password_field.dart';
 import 'package:flutter_auth/constants.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:flutter_auth/Screens/registerCoffeeGrower/register_coffee_grower.dart';
 
 class Body extends StatelessWidget {
   get expandedHeight => 200;
@@ -26,7 +25,7 @@ class Body extends StatelessWidget {
             ),
             SizedBox(height: size.height * 0.03),
             Text(
-              "Cadastro do produtor",
+              "Cadastro do Produtor",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 28,
@@ -35,17 +34,20 @@ class Body extends StatelessWidget {
             ),
             SizedBox(height: size.height * 0.03),
             RoundedInputField(
-              hintText1: "Entre com seu e-mail",
+              hintText1: "Seu nome",
               onChanged: (value) {},
             ),
-            RoundedPasswordField(
-              hintText2: "Crie uma senha",
+            RoundedInputField(
+              hintText1: "Seu CPF",
               onChanged: (value) {},
             ),
-            RoundedPasswordField(
-              hintText2: "Repita sua senha",
+            RoundedInputField(
+              hintText1: "Seu telefone",
               onChanged: (value) {},
             ),
+
+            // O email já está cadastrado nessa seção,  ele acabou de inserir
+
             RoundedButton(
               text: "CONTINUAR",
               color: yellowColor,
@@ -56,7 +58,7 @@ class Body extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return RegisterCoffeeGrower();
+                      return Catalogo();
                     },
                   ),
                 );
