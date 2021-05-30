@@ -25,28 +25,45 @@ class Body extends StatelessWidget {
             ),
             SizedBox(height: size.height * 0.03),
             Text(
-              "Cadastro do Produtor",
+              "Deseja cadastrar alguma propriedade agora?",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 28,
+                fontSize: 24,
                 color: whiteColor,
               ),
             ),
-            SizedBox(height: size.height * 0.03),
-            RoundedInputField(
-              hintText1: "Seu nome",
-              onChanged: (value) {},
+            RoundedButton(
+              text: "SIM",
+              color: yellowColor,
+              borderColor: Color.fromRGBO(255, 184, 0, 0),
+              textColor: Colors.white,
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return RegisterPlaceOrFarm();
+                    },
+                  ),
+                );
+              },
             ),
-            RoundedInputField(
-              hintText1: "Seu CPF",
-              onChanged: (value) {},
+            RoundedButton(
+              text: "NÃO",
+              color: yellowColor,
+              borderColor: Color.fromRGBO(255, 184, 0, 0),
+              textColor: Colors.white,
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return Catalogo();
+                    },
+                  ),
+                );
+              },
             ),
-            RoundedInputField(
-              hintText1: "Seu telefone",
-              onChanged: (value) {},
-            ),
-
-            // O email já está cadastrado nessa seção,  ele acabou de inserir
           ],
         ),
       ),
