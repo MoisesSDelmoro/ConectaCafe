@@ -1,38 +1,11 @@
 import 'package:flutter/material.dart';
 
-int _selectedIndex = 0;
-
-class Body extends StatefulWidget {
-  const Body({
-    Key key,
-  }) : super(key: key);
-
+class Fazenda extends StatefulWidget {
   @override
-  _BodyState createState() => _BodyState();
+  _FazendaState createState() => _FazendaState();
 }
 
-class _BodyState extends State<Body> {
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
-
-  static const List<Widget> _pages = <Widget>[
-    Icon(
-      Icons.call,
-      size: 150,
-    ),
-    Icon(
-      Icons.camera,
-      size: 150,
-    ),
-    Icon(
-      Icons.chat,
-      size: 150,
-    ),
-  ];
-
+class _FazendaState extends State<Fazenda> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -314,35 +287,6 @@ class _BodyState extends State<Body> {
               ],
             ),
           ),
-        ),
-        bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: Color.fromARGB(255, 106, 57, 19),
-          iconSize: 28,
-          showSelectedLabels: false,
-          showUnselectedLabels: false,
-          selectedIconTheme:
-              IconThemeData(color: Colors.amberAccent.shade700, size: 32),
-          selectedItemColor: Colors.amberAccent,
-          unselectedIconTheme: IconThemeData(
-            color: Colors.white,
-          ),
-          unselectedItemColor: Colors.white,
-          currentIndex: _selectedIndex,
-          onTap: _onItemTapped,
-          items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
-              icon: Icon(Icons.call),
-              label: '',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home_outlined),
-              label: '',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.arrow_circle_up),
-              label: '',
-            ),
-          ],
         ),
       ),
     );
