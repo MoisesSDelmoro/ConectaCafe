@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_auth/Screens/HomeMobile/cafe.dart';
 import 'package:flutter_auth/Screens/HomeMobile/fazenda.dart';
+import 'package:flutter_auth/Screens/HomeMobile/info.dart';
 
 int _selectedIndex = 1;
 
@@ -16,15 +18,9 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   static List<Widget> _pages = <Widget>[
-    Icon(
-      Icons.camera,
-      size: 150,
-    ),
+    Cafe(),
     Fazenda(),
-    Icon(
-      Icons.chat,
-      size: 150,
-    ),
+    Informacao(),
   ];
 
   @override

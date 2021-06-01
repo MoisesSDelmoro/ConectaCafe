@@ -12,10 +12,11 @@ class _FazendaState extends State<Fazenda> {
       home: Scaffold(
         appBar: AppBar(
           title: Center(
-              child: const Text(
-            'Fazenda',
-            style: TextStyle(fontSize: 32),
-          )),
+            child: const Text(
+              'Fazenda',
+              style: TextStyle(fontSize: 32),
+            ),
+          ),
           backgroundColor: Color.fromARGB(255, 51, 22, 2),
         ),
         backgroundColor: Color.fromARGB(255, 255, 248, 228),
