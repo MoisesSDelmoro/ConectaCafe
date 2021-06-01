@@ -1,21 +1,50 @@
 import 'package:flutter/material.dart';
 
-class Body extends StatelessWidget {
+int _selectedIndex = 0;
+
+class Body extends StatefulWidget {
   const Body({
     Key key,
   }) : super(key: key);
+
+  @override
+  _BodyState createState() => _BodyState();
+}
+
+class _BodyState extends State<Body> {
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
+
+  static const List<Widget> _pages = <Widget>[
+    Icon(
+      Icons.call,
+      size: 150,
+    ),
+    Icon(
+      Icons.camera,
+      size: 150,
+    ),
+    Icon(
+      Icons.chat,
+      size: 150,
+    ),
+  ];
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-            title: Center(
-                child: const Text(
-              'Fazenda',
-              style: TextStyle(fontSize: 32),
-            )),
-            backgroundColor: Color.fromARGB(255, 51, 22, 2)),
+          title: Center(
+              child: const Text(
+            'Fazenda',
+            style: TextStyle(fontSize: 32),
+          )),
+          backgroundColor: Color.fromARGB(255, 51, 22, 2),
+        ),
         backgroundColor: Color.fromARGB(255, 255, 248, 228),
         body: SingleChildScrollView(
           child: Center(
@@ -279,9 +308,41 @@ class Body extends StatelessWidget {
                     ),
                   ],
                 ),
+                SizedBox(
+                  height: 20,
+                ),
               ],
             ),
           ),
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          backgroundColor: Color.fromARGB(255, 106, 57, 19),
+          iconSize: 28,
+          showSelectedLabels: false,
+          showUnselectedLabels: false,
+          selectedIconTheme:
+              IconThemeData(color: Colors.amberAccent.shade700, size: 32),
+          selectedItemColor: Colors.amberAccent,
+          unselectedIconTheme: IconThemeData(
+            color: Colors.white,
+          ),
+          unselectedItemColor: Colors.white,
+          currentIndex: _selectedIndex,
+          onTap: _onItemTapped,
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(Icons.call),
+              label: '',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home_outlined),
+              label: '',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.arrow_circle_up),
+              label: '',
+            ),
+          ],
         ),
       ),
     );
