@@ -101,11 +101,11 @@ class _FancyTabBarState extends State<FancyTabBar>
                 children: <Widget>[
                   TabItem(
                       selected: currentSelected == 0,
-                      iconData: Icons.home,
+                      iconData: Icons.coffee,
                       title: "Coffe",
                       callbackFunction: () {
                         setState(() {
-                          nextIcon = Icons.home;
+                          nextIcon = Icons.coffee;
                           currentSelected = 0;
                         });
                         _initAnimationAndStart(_positionAnimation.value, -1);
@@ -157,7 +157,8 @@ class _FancyTabBarState extends State<FancyTabBar>
                                       width: 70,
                                       height: 70,
                                       decoration: BoxDecoration(
-                                          color: Colors.white,
+                                          color: Color.fromARGB(
+                                              255, 255, 248, 228),
                                           shape: BoxShape.circle,
                                           boxShadow: [
                                             BoxShadow(
@@ -181,7 +182,7 @@ class _FancyTabBarState extends State<FancyTabBar>
                                 shape: BoxShape.circle,
                                 color: Color.fromARGB(255, 51, 22, 2),
                                 border: Border.all(
-                                    color: Colors.white,
+                                    color: Color.fromARGB(255, 255, 248, 228),
                                     width: 5,
                                     style: BorderStyle.none)),
                             child: Padding(
@@ -190,7 +191,7 @@ class _FancyTabBarState extends State<FancyTabBar>
                                 opacity: fabIconAlpha,
                                 child: Icon(
                                   activeIcon,
-                                  color: Colors.white,
+                                  color: Color.fromARGB(255, 255, 248, 228),
                                 ),
                               ),
                             ),
@@ -249,7 +250,10 @@ class HalfPainter extends CustomPainter {
     path.arcTo(afterRect, vector.radians(180), vector.radians(-90), false);
     path.close();
 
-    canvas.drawPath(path, Paint()..color = Colors.white);
+    canvas.drawPath(
+      path,
+      Paint()..color = Color.fromARGB(255, 255, 248, 228),
+    );
   }
 
   @override
