@@ -182,105 +182,110 @@ class _FazendaState extends State<Fazenda> {
                 SizedBox(
                   height: 12,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "Telefone:",
-                      style: TextStyle(fontSize: 14),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.all(6.0),
-                      padding: const EdgeInsets.all(8),
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Color.fromARGB(255, 159, 53, 8),
-                        ),
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(8),
-                        ),
+                Container(
+                  padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                  child: Row(
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Telefone:",
+                            style: TextStyle(fontSize: 14),
+                          ),
+                          SizedBox(
+                            height: 30,
+                          ),
+                          Text(
+                            "Email:",
+                            style: TextStyle(fontSize: 14),
+                          ),
+                          SizedBox(
+                            height: 30,
+                          ),
+                          Text(
+                            "Instagram:",
+                            style: TextStyle(fontSize: 14),
+                          ),
+                          SizedBox(
+                            height: 30,
+                          ),
+                          Text(
+                            "Facebook:",
+                            style: TextStyle(fontSize: 14),
+                          ),
+                        ],
                       ),
-                      child: Text(
-                        'Texto que vai receber da API aqui',
-                        style: TextStyle(fontSize: 14),
-                      ),
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "Email:",
-                      style: TextStyle(fontSize: 14),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.all(6.0),
-                      padding: const EdgeInsets.all(8),
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Color.fromARGB(255, 159, 53, 8),
-                        ),
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(8),
-                        ),
-                      ),
-                      child: Text(
-                        'Texto que vai receber da API aqui',
-                        style: TextStyle(fontSize: 14),
-                      ),
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "Instagram:",
-                      style: TextStyle(fontSize: 14),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.all(6.0),
-                      padding: const EdgeInsets.all(8),
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Color.fromARGB(255, 159, 53, 8),
-                        ),
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(8),
-                        ),
-                      ),
-                      child: Text(
-                        'Texto que vai receber da API aqui',
-                        style: TextStyle(fontSize: 14),
-                      ),
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "Facebook:",
-                      style: TextStyle(fontSize: 14),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.all(6.0),
-                      padding: const EdgeInsets.all(8),
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Color.fromARGB(255, 159, 53, 8),
-                        ),
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(8),
-                        ),
-                      ),
-                      child: Text(
-                        'Texto que vai receber da API aqui',
-                        style: TextStyle(fontSize: 14),
-                      ),
-                    ),
-                  ],
+                      Column(
+                        children: [
+                          Container(
+                            margin: const EdgeInsets.all(6.0),
+                            padding: const EdgeInsets.all(8),
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Color.fromARGB(255, 159, 53, 8),
+                              ),
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(8),
+                              ),
+                            ),
+                            child: Text(
+                              'Texto que vai receber da API aqui',
+                              style: TextStyle(fontSize: 14),
+                            ),
+                          ),
+                          Container(
+                            margin: const EdgeInsets.all(6.0),
+                            padding: const EdgeInsets.all(8),
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Color.fromARGB(255, 159, 53, 8),
+                              ),
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(8),
+                              ),
+                            ),
+                            child: Text(
+                              'Texto que vai receber da API aqui',
+                              style: TextStyle(fontSize: 14),
+                            ),
+                          ),
+                          Container(
+                            margin: const EdgeInsets.all(6.0),
+                            padding: const EdgeInsets.all(8),
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Color.fromARGB(255, 159, 53, 8),
+                              ),
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(8),
+                              ),
+                            ),
+                            child: Text(
+                              'Texto que vai receber da API aqui',
+                              style: TextStyle(fontSize: 14),
+                            ),
+                          ),
+                          Container(
+                            margin: const EdgeInsets.all(6.0),
+                            padding: const EdgeInsets.all(8),
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Color.fromARGB(255, 159, 53, 8),
+                              ),
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(8),
+                              ),
+                            ),
+                            child: Text(
+                              'Texto que vai receber da API aqui',
+                              style: TextStyle(fontSize: 14),
+                            ),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
                 ),
                 SizedBox(
                   height: 20,
