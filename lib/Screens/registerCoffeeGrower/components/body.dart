@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_auth/Screens/HomeMobile/fazenda.dart';
 import 'package:flutter_auth/Screens/HomeMobile/home_screen.dart';
 import 'package:flutter_auth/Screens/Login/components/background.dart';
 import 'package:flutter_auth/Screens/Signup/signup_screen.dart';
@@ -92,7 +93,7 @@ class Body extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                             builder: (context) {
-                              return SignUpScreen();
+                              return Fazenda();
                             },
                           ),
                         );
