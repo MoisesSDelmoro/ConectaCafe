@@ -16,24 +16,19 @@ class RoundedPasswordField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var inputDecoration = InputDecoration(
-      icon: Icon(
-        Icons.lock,
-        color: lightYellowColor,
-      ),
       suffixIcon: Icon(
         Icons.visibility,
-        color: lightYellowColor,
+        color: Color.fromRGBO(255, 184, 0, 1),
       ),
       hintText: hintText2,
-      hintStyle: TextStyle(fontSize: 14, color: Colors.white),
+      hintStyle: TextStyle(fontSize: 14),
       border: InputBorder.none,
     );
     return TextFieldContainer(
       child: TextField(
         obscureText: true,
         onChanged: onChanged,
-        cursorColor: lightWhiteColor,
-        style: TextStyle(fontSize: 14, color: whiteColor),
+        style: TextStyle(fontSize: 14),
         decoration: inputDecoration,
       ),
     );
