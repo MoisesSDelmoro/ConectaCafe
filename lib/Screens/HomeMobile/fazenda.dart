@@ -35,20 +35,29 @@ class _FazendaState extends State<Fazenda> {
                 SizedBox(
                   height: 8,
                 ),
-                Container(
-                  margin: const EdgeInsets.all(15.0),
-                  padding: const EdgeInsets.all(10),
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Color.fromARGB(255, 159, 53, 8),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20),
+                  child: Container(
+                    margin: const EdgeInsets.all(15.0),
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Color.fromARGB(255, 159, 53, 8),
+                      ),
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(15),
+                      ),
                     ),
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(15),
+                    child: SingleChildScrollView(
+                      child: Column(
+                        children: [
+                          Text(
+                            'Texto que vai receber da API aquiTexto que vai receber da API aquiTexto que vai receber da API aquiTexto que vai receber da API aquiTexto que vai receber da API aquiTexto que vai receber da API aqui',
+                            style: TextStyle(fontSize: 15),
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                  child: Text(
-                    'Texto que vai receber da API aqui',
-                    style: TextStyle(fontSize: 16),
                   ),
                 ),
                 SizedBox(
