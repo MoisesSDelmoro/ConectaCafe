@@ -431,12 +431,6 @@ class _CafeState extends State<Cafe> {
                                                 '  Aroma',
                                                 style: TextStyle(fontSize: 20),
                                               ),
-                                              Icon(
-                                                Icons.arrow_drop_down,
-                                                size: 28,
-                                                color: Color.fromARGB(
-                                                    255, 209, 151, 0),
-                                              ),
                                             ],
                                           ),
                                         ),
@@ -461,16 +455,11 @@ class _CafeState extends State<Cafe> {
                                                 '  Sabor',
                                                 style: TextStyle(fontSize: 20),
                                               ),
-                                              Icon(
-                                                Icons.arrow_drop_down,
-                                                size: 28,
-                                                color: Color.fromARGB(
-                                                    255, 209, 151, 0),
-                                              ),
                                             ],
                                           ),
                                         ),
                                         Container(
+                                          height: 40,
                                           margin: const EdgeInsets.all(15.0),
                                           padding: const EdgeInsets.all(3.0),
                                           decoration: BoxDecoration(
@@ -489,12 +478,6 @@ class _CafeState extends State<Cafe> {
                                               Text(
                                                 '  Acidez',
                                                 style: TextStyle(fontSize: 20),
-                                              ),
-                                              Icon(
-                                                Icons.arrow_drop_down,
-                                                size: 28,
-                                                color: Color.fromARGB(
-                                                    255, 209, 151, 0),
                                               ),
                                             ],
                                           ),
