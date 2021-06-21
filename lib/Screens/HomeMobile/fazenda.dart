@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class Fazenda extends StatefulWidget {
   @override
@@ -52,8 +53,8 @@ class _FazendaState extends State<Fazenda> {
                       child: Column(
                         children: [
                           Text(
-                            'Texto que vai receber da API aquiTexto que vai receber da API aquiTexto que vai receber da API aquiTexto que vai receber da API aquiTexto que vai receber da API aquiTexto que vai receber da API aqui',
-                            style: TextStyle(fontSize: 15),
+                            'A história teve ínicio com a chegada dos imigrantes Italianos ao sul de Minas, com a passar do tempo, um neto dos imigrantes Italianos casou e formou uma família no bairro do Taguá, depois de muito trabalho, adquiriu muitas terras, essas terras foram divididas após sua morte, seus filhos seguiram os passos de seu pai. Hoje cada filho administra suas próprias terras.',
+                            style: TextStyle(fontSize: 13),
                           ),
                         ],
                       ),
@@ -126,11 +127,8 @@ class _FazendaState extends State<Fazenda> {
                           Radius.circular(15),
                         ),
                       ),
-                      child: Center(
-                        child: Text(
-                          'Foto 1',
-                          style: TextStyle(fontSize: 16),
-                        ),
+                      child: Image.asset(
+                        "assets/images/sitioMoises_3.jpg",
                       ),
                     ),
                     Container(
@@ -144,11 +142,8 @@ class _FazendaState extends State<Fazenda> {
                           Radius.circular(15),
                         ),
                       ),
-                      child: Center(
-                        child: Text(
-                          'Foto 2',
-                          style: TextStyle(fontSize: 16),
-                        ),
+                      child: Image.asset(
+                        "assets/images/sitioMoises_4.jpg",
                       ),
                     ),
                   ],
@@ -186,7 +181,7 @@ class _FazendaState extends State<Fazenda> {
                                 ),
                               ),
                               child: Text(
-                                'Texto que vai receber da API aqui',
+                                'Ouro Fino                        .',
                                 style: TextStyle(fontSize: 14),
                               ),
                             ),
@@ -210,7 +205,7 @@ class _FazendaState extends State<Fazenda> {
                                 ),
                               ),
                               child: Text(
-                                'Texto que vai receber da API aqui',
+                                '37570-000                        .',
                                 style: TextStyle(fontSize: 14),
                               ),
                             ),
@@ -234,7 +229,7 @@ class _FazendaState extends State<Fazenda> {
                                 ),
                               ),
                               child: Text(
-                                'Texto que vai receber da API aqui',
+                                'Rua dos Pinheiros          .',
                                 style: TextStyle(fontSize: 14),
                               ),
                             ),
@@ -258,7 +253,7 @@ class _FazendaState extends State<Fazenda> {
                                 ),
                               ),
                               child: Text(
-                                'Texto que vai receber da API aqui',
+                                'Taguá                            .',
                                 style: TextStyle(fontSize: 14),
                               ),
                             ),
@@ -301,7 +296,7 @@ class _FazendaState extends State<Fazenda> {
                                 ),
                               ),
                               child: Text(
-                                'Texto que vai receber da API aqui',
+                                '(35) 3746-5292                   .',
                                 style: TextStyle(fontSize: 14),
                               ),
                             ),
@@ -325,7 +320,7 @@ class _FazendaState extends State<Fazenda> {
                                 ),
                               ),
                               child: Text(
-                                'Texto que vai receber da API aqui',
+                                'sitioparaiso@outlook.com.',
                                 style: TextStyle(fontSize: 14),
                               ),
                             ),
@@ -349,7 +344,7 @@ class _FazendaState extends State<Fazenda> {
                                 ),
                               ),
                               child: Text(
-                                'Texto que vai receber da API aqui',
+                                '@Sitio_Paraiso                   .',
                                 style: TextStyle(fontSize: 14),
                               ),
                             ),
@@ -373,7 +368,7 @@ class _FazendaState extends State<Fazenda> {
                                 ),
                               ),
                               child: Text(
-                                'Texto que vai receber da API aqui',
+                                '@Sitio_Paraiso                   .',
                                 style: TextStyle(fontSize: 14),
                               ),
                             ),

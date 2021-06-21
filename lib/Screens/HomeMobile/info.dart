@@ -55,7 +55,7 @@ class _InformacaoState extends State<Informacao> {
                       Align(
                         alignment: Alignment.centerLeft,
                         child: Text(
-                          'Última cotação - 0000',
+                          'Última cotação - 18/06/2021',
                           style: TextStyle(
                               fontSize: 18,
                               color: Color.fromARGB(255, 108, 57, 19)),
@@ -71,7 +71,7 @@ class _InformacaoState extends State<Informacao> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "R\$ 737,00",
+                                "R\$ 837,00",
                                 style: TextStyle(
                                   fontSize: 32,
                                   color: Color.fromARGB(255, 51, 22, 2),
@@ -83,7 +83,7 @@ class _InformacaoState extends State<Informacao> {
                                     height: 10,
                                   ),
                                   Text(
-                                    "+1,37%",
+                                    "+0,60%",
                                     style: TextStyle(
                                       fontSize: 14,
                                       color: Color.fromARGB(255, 51, 22, 2),
@@ -112,7 +112,7 @@ class _InformacaoState extends State<Informacao> {
                                 ),
                               ),
                               Text(
-                                "Resposta da API",
+                                "Notícias Agrícolas",
                                 style: TextStyle(
                                   fontSize: 15,
                                   color: Color.fromARGB(255, 51, 22, 2),
@@ -218,7 +218,7 @@ class _InformacaoState extends State<Informacao> {
                             size: 24,
                           ),
                           Text(
-                            "18°C",
+                            "21°C",
                             style: TextStyle(
                               fontSize: 18,
                               color: Color.fromARGB(255, 51, 22, 2),
@@ -250,7 +250,7 @@ class _InformacaoState extends State<Informacao> {
                             size: 24,
                           ),
                           Text(
-                            "18°C",
+                            "21°C",
                             style: TextStyle(
                               fontSize: 18,
                               color: Color.fromARGB(255, 51, 22, 2),
@@ -282,7 +282,7 @@ class _InformacaoState extends State<Informacao> {
                             size: 24,
                           ),
                           Text(
-                            "18°C",
+                            "22°C",
                             style: TextStyle(
                               fontSize: 18,
                               color: Color.fromARGB(255, 51, 22, 2),
@@ -314,7 +314,7 @@ class _InformacaoState extends State<Informacao> {
                             size: 24,
                           ),
                           Text(
-                            "18°C",
+                            "19°C",
                             style: TextStyle(
                               fontSize: 18,
                               color: Color.fromARGB(255, 51, 22, 2),
@@ -346,7 +346,7 @@ class _InformacaoState extends State<Informacao> {
                             size: 24,
                           ),
                           Text(
-                            "18°C",
+                            "20°C",
                             style: TextStyle(
                               fontSize: 18,
                               color: Color.fromARGB(255, 51, 22, 2),

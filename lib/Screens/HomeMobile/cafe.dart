@@ -52,12 +52,12 @@ class _CafeState extends State<Cafe> {
                       children: [
                         Spacer(),
                         Text(
-                          'Cafe 1',
+                          'Arábica',
                           style: TextStyle(fontSize: 26),
                         ),
                         Spacer(),
                         Text(
-                          'Marca 1',
+                          'Mundo Novo',
                           style: TextStyle(fontSize: 20),
                         ),
                         Spacer(),
@@ -135,12 +135,12 @@ class _CafeState extends State<Cafe> {
                       children: [
                         Spacer(),
                         Text(
-                          'Cafe 1',
+                          'Arábica',
                           style: TextStyle(fontSize: 26),
                         ),
                         Spacer(),
                         Text(
-                          'Marca 1',
+                          'Laurina',
                           style: TextStyle(fontSize: 20),
                         ),
                         Spacer(),
@@ -218,12 +218,12 @@ class _CafeState extends State<Cafe> {
                       children: [
                         Spacer(),
                         Text(
-                          'Cafe 1',
+                          'Robusta',
                           style: TextStyle(fontSize: 26),
                         ),
                         Spacer(),
                         Text(
-                          'Marca 1',
+                          'Conilon',
                           style: TextStyle(fontSize: 20),
                         ),
                         Spacer(),
